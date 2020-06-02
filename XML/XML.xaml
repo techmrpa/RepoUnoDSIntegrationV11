@@ -64,9 +64,9 @@
       <Variable x:TypeArguments="sxl:XDocument" Name="xDocument" />
       <Variable x:TypeArguments="x:Boolean" Name="IsValid" />
     </Sequence.Variables>
-    <p:LoadXml XmlString="{x:Null}" FilePath="C:\Program Files (x86)\TechM\UnoDesignerStudio\Samples\XML\Breakfast_Menu_List.xml" sap2010:WorkflowViewState.IdRef="LoadXml_2" IsValidXml="[IsValid]" XDoc="[xDocument]" />
     <Sequence sap2010:Annotation.AnnotationText="Get elements by tag name" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <p:GetElementsByTagName sap2010:Annotation.AnnotationText="" Elements="[xmlElementList]" sap2010:WorkflowViewState.IdRef="GetElementsByTagName_1" TagValue="Price" XDoc="[xDocument]" />
+      <p:LoadXml XmlString="{x:Null}" FilePath="C:\Program Files (x86)\TechM\UnoDesignerStudio\Samples\XML\Breakfast_Menu_List.xml" sap2010:WorkflowViewState.IdRef="LoadXml_2" IsValidXml="[IsValid]" XDoc="[xDocument]" />
       <ForEach x:TypeArguments="sxl:XElement" DisplayName="ForEach&lt;XElement&gt;" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[xmlElementList]">
         <ActivityAction x:TypeArguments="sxl:XElement">
           <ActivityAction.Argument>
@@ -109,11 +109,10 @@
         </ActivityAction>
       </ForEach>
     </Sequence>
-    <sads:DebugSymbol.Symbol>d0NDOlxQcm9ncmFtIEZpbGVzICh4ODYpXFRlY2hNXFVub0Rlc2lnbmVyU3R1ZGlvXFNhbXBsZXNcWE1MXFhNTC54YW1sKz4DcQ4CAQFDBUPbAQIBMkQFThACAShPBVkQAgEbWgVkEAIBDmUFbxACAQJDugFDxQECATZDywFD2AECATRDLkOCAQIBM0UHRb8BAgEtRgdNEQIBKVAHUI0BAgEiUQdYEQIBHFsHW6gBAgEVXAdjEQIBD2YHZtsBAgEHZwduEQIBA0WiAUWpAQIBMUVNRV8CATBFrwFFvAECAS5GigFGnAECASxLC0tlAgEqUG9QdQIBJ1BZUGYCASVQfVCKAQIBI1GEAVGRAQIBIFYLVlQCAR1bfVuQAQIBGVuYAVulAQIBF1swWzkCARZchAFclwECARNhC2FUAgEQZr8BZsUBAgENZk5mUQIBDGY1Zj4CAQtmW2ZwAgEKZssBZtgBAgEIZ4oBZ58BAgEGbAtsZQIBBEtJS2ICAStWSVZRAgEeYUlhUQIBEWxJbGICAQU=</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>dyNEOlxUZWNoTVxVbm9EU1xTYW1wbGVzXFhNTFxYTUwueGFtbCs+A3EOAgEBQwVOEAIBKE8FWRACARtaBWQQAgEOZQVvEAIBAkQHRL8BAgEzRQdF3QECAS1GB00RAgEpUAdQjQECASJRB1gRAgEcWwdbqAECARVcB2MRAgEPZgdm2wECAQdnB24RAgEDRKIBRKkBAgE3RE1EXwIBNkSvAUS8AQIBNEW8AUXHAQIBMUXNAUXaAQIBL0UwRYQBAgEuRooBRpwBAgEsSwtLZQIBKlBvUHUCASdQWVBmAgElUH1QigECASNRhAFRkQECASBWC1ZUAgEdW31bkAECARlbmAFbpQECARdbMFs5AgEWXIQBXJcBAgETYQthVAIBEGa/AWbFAQIBDWZOZlECAQxmNWY+AgELZltmcAIBCmbLAWbYAQIBCGeKAWefAQIBBmwLbGUCAQRLSUtiAgErVklWUQIBHmFJYVECARFsSWxiAgEF</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
-      <sap2010:ViewStateData Id="LoadXml_2" sap:VirtualizedContainerService.HintSize="309,22" />
       <sap2010:ViewStateData Id="GetElementsByTagName_1" sap:VirtualizedContainerService.HintSize="287,45">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -121,6 +120,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
+      <sap2010:ViewStateData Id="LoadXml_2" sap:VirtualizedContainerService.HintSize="287,22" />
       <sap2010:ViewStateData Id="WriteLine_2" sap:VirtualizedContainerService.HintSize="210,61" />
       <sap2010:ViewStateData Id="ForEach`1_1" sap:VirtualizedContainerService.HintSize="287,209">
         <sap:WorkflowViewStateService.ViewState>
@@ -130,7 +130,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="309,441">
+      <sap2010:ViewStateData Id="Sequence_2" sap:VirtualizedContainerService.HintSize="309,503">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
