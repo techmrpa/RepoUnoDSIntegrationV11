@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Breakfast_Menu>
+  <Food Item_Id="1">
+    <Name>Belgian Waffles</Name>
+    <Price>$140</Price>
+    <Description>Two of our famous Belgian Waffles with plenty of real maple syrup</Description>
+    <Calories>650</Calories>
+    <Offers>Buy 2 get one free</Offers>
+    <childnode2>childnodevalue</childnode2>
+  </Food>
+  <Food Item_Id="2">
+    <Name>Strawberry Belgian Waffles</Name>
+    <Price>$20</Price>
+    <Description>Light Belgian waffles covered with strawberries and whipped cream</Description>
+    <Calories>900</Calories>
+    <Offers>
+    </Offers>
+  
+  </Food>
+  <Food Item_Id="3">
+    <Name>Berry-Berry Belgian Waffles</Name>
+    <Price>$50</Price>
+    <Description>Light Belgian waffles covered with an assortment of fresh berries and whipped cream</Description>
+    <Calories>900</Calories>
+    <Offers>Free Coke</Offers>
+    <childnode2>childnodevalue</childnode2>
+  </Food>
+  <Food Item_Id="4">
+    <Name>French Toast</Name>
+    <Price>$60.8</Price>
+    <Description>Thick slices made from our homemade sourdough bread</Description>
+    <Calories>600</Calories>
+    <Offers>
+    </Offers>
+  </Food>
+  <Food Item_Id="5">
+    <Name>Homestyle Breakfast</Name>
+    <Price>$2</Price>
+    <Description>Two eggs, bacon or sausage, toast, and our ever-popular hash browns</Description>
+    <Calories>950</Calories>
+    <Offers>Free Sandwich</Offers>
+    
+  </Food>
+</Breakfast_Menu>
