@@ -79,17 +79,17 @@
           <InArgument x:TypeArguments="scg:Dictionary(x:String, scg:Dictionary(x:String, x:Object))">[new Dictionary(of String, Dictionary(of String, object))]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap2010:WorkflowViewState.IdRef="Assign_6">
         <Assign.To>
-          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Queue_Settings]</OutArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Assets_Settings]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap2010:WorkflowViewState.IdRef="Assign_6">
+      <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
-          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Assets_Settings]</OutArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Queue_Settings]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
@@ -103,7 +103,7 @@
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
         </Assign.Value>
       </Assign>
-      <e:CreateOrOpenExcel DisableAlert="False" sap2010:WorkflowViewState.IdRef="CreateOrOpenExcel_1" Path="[config_Path]" RepairFile="False" WindowState="Maximize" WorkBook="[workBook]" />
+      <e:CreateOrOpenExcel CreateExcel="True" DisableAlert="False" sap2010:WorkflowViewState.IdRef="CreateOrOpenExcel_1" Path="[config_Path]" RepairFile="False" WindowState="Maximize" WorkBook="[workBook]" />
       <e:ReadRangeOfData Range="{x:Null}" DataTableOut="[config_Datatable]" ExpandMergedCells="False" sap2010:WorkflowViewState.IdRef="ReadRangeOfData_1" ShowFirstRowAsDataTableHeader="True" WorkBook="[workBook]" WorksheetNumber="[1]" />
       <e:CloseExcel sap2010:WorkflowViewState.IdRef="CloseExcel_1" Workbook="[workBook]" />
       <ForEach x:TypeArguments="sd:DataRow" DisplayName="ForEach&lt;DataRow&gt;" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[config_Datatable.AsEnumerable()]">
@@ -210,13 +210,13 @@
         </ActivityAction>
       </ForEach>
     </Sequence>
-    <sads:DebugSymbol.Symbol>dyhEOlxSRV9GcmFtZXdvcmtfU2FtcGxlIF9FeGNlbFxFbnRyeS54YW1sSz8D1gEOAgEBQAXUARACAQJIOEiLAQIBA0oHURACAWFSB1kQAgFdWgdhEAIBWWIHaRACAVVqB2q+AQIBUGsHa+4BAgFKbAdsXAIBR20HvQERAgEfvgEH0wERAgEET2ZPoAECAWRMZ0x0AgFiV0xXbwIBYFRNVF0CAV5fTF9vAgFcXE1cXgIBWmdMZ28CAVhkTWRdAgFWaq8BarsBAgFTamxqewIBUWvmAWvrAQIBT2s4a0wCAU1ryQFr1QECAUtsTWxZAgFIbYcBbaoBAgFGcgu7ARYCASC+AYQBvgGQAQIBHcMBC9EBEAIBBXcNhAESAgE/hQENlgESAgE1lwENqAESAgErqQENugESAgEhwwEZwwE9AgEGxQEPxQHkAQIBF8gBD88BFAIBCHcbd+MBAgFAeRGCARwCAUGFARuFATsCATaHARGUARYCATmXARuXAToCASyZARGmARYCAS+pARupATsCASKrARG4ARYCASXFAc8BxQHhAQIBG8UBb8UBfgIBGcUBuQHFAcgBAgEYyAEdyAFBAgEJygETygHpAQIBEc0BE80B6AECAQt6E4EBHAIBQocBH4cBYAIBOokBFZIBIAIBO5kBH5kBYAIBMJsBFaQBIAIBMasBH6sBYAIBJq0BFbYBIAIBJ8oB0wHKAeYBAgEVygFzygGCAQIBE8oBvQHKAcwBAgESzQHTAc0B5QECAQ/NAXPNAYIBAgENzQG9Ac0BzAECAQx/Pn9VAgFFfD98SgIBQ4oBF5EBIAIBPJwBF6MBIAIBMq4BF7UBIAIBKI8BQo8BUAIBPowBQ4wBbgIBPaEBQqEBUAIBNJ4BQ54BbwIBM7MBQrMBUAIBKrABQ7ABbgIBKQ==</sads:DebugSymbol.Symbol>
+    <sads:DebugSymbol.Symbol>d0VEOlxUZWNoTVxVbm9EU1xTYW1wbGVzXFVubyBTdGFuZGFyZCBQcm9jZXNzIFRlbXBsYXRlKFVTUFQpXEVudHJ5LnhhbWxLPwPWAQ4CAQFABdQBEAIBAkg4SIsBAgEDSgdREAIBYVIHWRACAV1aB2EQAgFZYgdpEAIBVWoHatEBAgFQawdr7gECAUpsB2xcAgFHbQe9ARECAR++AQfTARECAQRPZk+gAQIBZExnTHQCAWJXTFdvAgFgVE1UXgIBXl9MX28CAVxcTVxdAgFaZ0xnbwIBWGRNZF0CAVZqwgFqzgECAVNqf2qOAQIBUWvmAWvrAQIBT2s4a0wCAU1ryQFr1QECAUtsTWxZAgFIbYcBbaoBAgFGcgu7ARYCASC+AYQBvgGQAQIBHcMBC9EBEAIBBXcNhAESAgE/hQENlgESAgE1lwENqAESAgErqQENugESAgEhwwEZwwE9AgEGxQEPxQHkAQIBF8gBD88BFAIBCHcbd+MBAgFAeRGCARwCAUGFARuFATsCATaHARGUARYCATmXARuXAToCASyZARGmARYCAS+pARupATsCASKrARG4ARYCASXFAc8BxQHhAQIBG8UBb8UBfgIBGcUBuQHFAcgBAgEYyAEdyAFBAgEJygETygHpAQIBEc0BE80B6AECAQt6E4EBHAIBQocBH4cBYAIBOokBFZIBIAIBO5kBH5kBYAIBMJsBFaQBIAIBMasBH6sBYAIBJq0BFbYBIAIBJ8oB0wHKAeYBAgEVygFzygGCAQIBE8oBvQHKAcwBAgESzQHTAc0B5QECAQ/NAXPNAYIBAgENzQG9Ac0BzAECAQx/Pn9VAgFFfD98SgIBQ4oBF5EBIAIBPJwBF6MBIAIBMq4BF7UBIAIBKI8BQo8BUAIBPowBQ4wBbgIBPaEBQqEBUAIBNJ4BQ54BbwIBM7MBQrMBUAIBKrABQ7ABbgIBKQ==</sads:DebugSymbol.Symbol>
   </Sequence>
   <sap2010:WorkflowViewState.ViewStateManager>
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="Assign_10" sap:VirtualizedContainerService.HintSize="719,60" />
-      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="Assign_6" sap:VirtualizedContainerService.HintSize="719,60" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="Assign_8" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="CreateOrOpenExcel_1" sap:VirtualizedContainerService.HintSize="719,22" />
       <sap2010:ViewStateData Id="ReadRangeOfData_1" sap:VirtualizedContainerService.HintSize="719,22" />
@@ -345,7 +345,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </sap2010:ViewStateData>
-      <sap2010:ViewStateData Id="CustomWorkflowDesigner.Activity1_1" sap:VirtualizedContainerService.HintSize="803,3742" />
+      <sap2010:ViewStateData Id="CustomWorkflowDesigner.Activity1_1" sap:VirtualizedContainerService.HintSize="803,3622" />
     </sap2010:ViewStateManager>
   </sap2010:WorkflowViewState.ViewStateManager>
 </Activity>
