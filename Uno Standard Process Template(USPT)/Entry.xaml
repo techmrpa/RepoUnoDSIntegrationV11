@@ -87,17 +87,17 @@
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap2010:WorkflowViewState.IdRef="Assign_8">
         <Assign.To>
-          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Queue_Settings]</OutArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Other_Settings]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
         </Assign.Value>
       </Assign>
-      <Assign sap2010:WorkflowViewState.IdRef="Assign_8">
+      <Assign sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
-          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Other_Settings]</OutArgument>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[Queue_Settings]</OutArgument>
         </Assign.To>
         <Assign.Value>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary(of String, object)]</InArgument>
@@ -216,8 +216,8 @@
     <sap2010:ViewStateManager>
       <sap2010:ViewStateData Id="Assign_10" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="Assign_6" sap:VirtualizedContainerService.HintSize="719,60" />
-      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="Assign_8" sap:VirtualizedContainerService.HintSize="719,60" />
+      <sap2010:ViewStateData Id="Assign_1" sap:VirtualizedContainerService.HintSize="719,60" />
       <sap2010:ViewStateData Id="CreateOrOpenExcel_1" sap:VirtualizedContainerService.HintSize="719,22" />
       <sap2010:ViewStateData Id="ReadRangeOfData_1" sap:VirtualizedContainerService.HintSize="719,22" />
       <sap2010:ViewStateData Id="CloseExcel_1" sap:VirtualizedContainerService.HintSize="719,22" />
